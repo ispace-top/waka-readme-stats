@@ -149,7 +149,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://blackheads/wake-readme-stats'
+  image: 'docker://blackheads/wake-readme-stats:1.0.0'
 
 branding:
   icon: 'activity'

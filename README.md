@@ -17,7 +17,7 @@
    <img src="https://img.shields.io/github/license/ispace-top/waka-readme-stats"/>
    <img src="https://img.shields.io/github/stars/ispace-top/waka-readme-stats"/>
    <img src="https://img.shields.io/github/forks/ispace-top/waka-readme-stats"/>
-   <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=如果%20有用&style=style=flat&color=BC4E99" alt="Star Badge"/>
+   <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=如果%20有用&style=flat&color=BC4E99" alt="Star Badge"/>
 </p>
 <p align="center">
    你是早起的鸟儿 🐤 还是夜猫子 🦉？
@@ -216,26 +216,12 @@ jobs:
 -   `DEBUG_LOGGING`: 是否启用 Action 调试日志。
 -   `DEBUG_RUN`: 是否以调试模式运行。
 
-## 🤝 贡献
-
-欢迎所有形式的贡献！如果你发现任何问题或 Bug，请务必开一个 [issue](https://github.com/ispace-top/waka-readme-stats/issues/new/choose) 让我检查。
-
-在提交 Pull Request 之前，请确保遵循以下准则：
-
-* 所有贡献都应遵循 [行为准则](./CODE_OF_CONDUCT.md)。
-* 项目使用 Python 编写，需要 **Python 3.8 或更高版本**。
-* 安装依赖：`pip install -r requirements.txt`。
-* 创建 `.env` 文件，参考 `.env.example` 配置环境变量。
-* 如果贡献图表模块，需要安装 Node.js 和 NPM，并运行 `npm install -g vega-lite vega-cli canvas`。
-* 确保代码正确 linting 和格式化，否则 PR **可能**会被拒绝。推荐使用 [语义化提交消息](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)。
-
 ## ❤️ 支持项目
 
 如果你觉得这个项目有用，可以通过以下方式支持我：
 
 * 在使用此 Action 时在你的 README 中注明，并链接回此仓库。
 * 给项目一个 Star ⭐ 并分享。
-* [![paypal.me/aapreneur](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/AAPRENEUR) - 通过 PayPal 捐赠。
 
 感谢！
 
@@ -244,6 +230,4 @@ jobs:
 * [anmol098/waka-readme-stats](https://github.com/anmol098/waka-readme-stats) - 原项目作者及维护者。
 * 所有为 `waka-readme-stats` 贡献的贡献者。
 
-感谢所有让你的 README 更棒的人！如果你正在使用这个项目但名字不在列表中，请发送一个 [特别提及](https://github.com/ispace-top/waka-readme-stats/issues/new/choose) 的 issue，我们很乐意添加你。
-
-本项目由 ❤️ 和 Python 🐍 制作。
+感谢所有让你的 README 更棒的人！

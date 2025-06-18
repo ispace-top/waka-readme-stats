@@ -17,6 +17,8 @@ class EnvironmentManager:
     WAKATIME_API_KEY = environ["INPUT_WAKATIME_API_KEY"]
 
     SECTION_NAME = getenv("INPUT_SECTION_NAME", "waka")
+    README_FILE = getenv("INPUT_README_FILE", "README.md") # 新增
+
     PULL_BRANCH_NAME = getenv("INPUT_PULL_BRANCH_NAME", "")
     PUSH_BRANCH_NAME = getenv("INPUT_PUSH_BRANCH_NAME", "")
 

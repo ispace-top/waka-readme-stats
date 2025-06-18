@@ -1,6 +1,6 @@
 from base64 import b64encode
 from os import environ, makedirs
-from os.path import dirname, join
+from os.path import dirname, join, isfile
 from random import choice
 from re import sub
 from shutil import copy, rmtree
@@ -105,7 +105,15 @@ class GitHubManager:
         Uses commit author, commit message and branch name specified by environmental variables.
         """
         DBM.i("Updating README...")
-        readme_path = join(GitHubManager.REPO.working_tree_dir, GitHubManager.REMOTE.get_readme().path)
+        readme_path = join(GitHubManager.REPO.working_tree_dir, EM.README_FILE) # 修改此处
+        # readme_path = join(GitHubManager.REPO.working_tree_dir, GitHubManager.REMOTE.get_readme().path)
+
+        if not isfile(readme_path):
+            DBM.w(f"README file '{EM.README_FILE_NAME}' not found, creating it.")
+            with open(readme_path, "w", encoding="utf-8") as f:
+                f.write(f"{GitHubManager._START_COMMENT}\n{GitHubManager._END_COMMENT}")
+            # DBM.w(f"README file '{EM.README_FILE_NAME}' not found, skipping update.")
+            # return # 如果不想创建，可以在这里返回
 
         with open(readme_path, "r") as readme_file:
             readme_contents = readme_file.read()

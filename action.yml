@@ -17,6 +17,11 @@ inputs:
     required: false
     default: "waka"
 
+  README_FILE: # 新增的输入参数
+    description: 'The name of the README file to update (e.g., README.md, README_fr.md)'
+    required: false
+    default: "README.md"
+
   PULL_BRANCH_NAME:
     required: false
     description: "The branch to get the readme from"
